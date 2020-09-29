@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Container from 'react-bootstrap/Container';
 import ListGroup from 'react-bootstrap/ListGroup';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import {
   FaTwitter, FaGithub, FaLinkedin, FaStackOverflow, FaMailBulk, FaCheck,
 } from 'react-icons/fa';
-// import Background from '../images/header-image.png';
 import Background from '../images/texture.jpg';
 import Me from '../images/Me.png';
 import { NavBar } from './NavBar';
 import { PortfolioList } from '../containers/PortfolioList';
+import { mPortfolio } from '../objects/PortfolioObject';
 
 function App() {
   return (
@@ -42,7 +40,7 @@ function App() {
               </ListGroup.Item>
             </ListGroup>
           </div>
-          <div className="intro-text mt-5  px-2 pl-lg-5">
+          <div className="intro-text mt-5  px-2">
 
             <div className="text-light bg-dark header-text p-2 mb-4 text-white text-sm-black rounded font-weight-bold">
               <h2>Hi, I&apos;m Shingirayi Mandebvu</h2>
@@ -59,7 +57,7 @@ function App() {
             </div>
           </div>
         </div>
-        <PortfolioList />
+        <PortfolioList portfolio={mPortfolio} />
       </Container>
     </>
   );
