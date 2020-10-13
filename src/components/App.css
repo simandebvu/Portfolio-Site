@@ -1,98 +1,112 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-.portfolio-invite {
-  width: 400px;
-  height: 50px;
-  background: #e9ede8;
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background: #f5f8fd;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
   position: relative;
-  background: #e9ede8;
-  margin-bottom: 25px;
-  border-radius: 32px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.1s ease-in-out;
-  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-    6px 6px 10px rgba(0, 0, 0, 0.2);
-  color: #6f6cde;
-}
-.portfolio-invite span {
-  line-height: 50px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: semibold;
-}
-.portfolio-invite:hover {
-  opacity: 0.3;
-  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-    6px 6px 10px rgba(0, 0, 0, 0.2);
-}
-.portfolio-invite:active {
-  opacity: 1;
-  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-    inset 8px 8px 16px rgba(0, 0, 0, 0.1);
-  color: #79e3b6;
+  color: #173b6c;
 }
 
-.header-text {
-  border-radius: 50px;
-  background: linear-gradient(145deg, #383e44, #2f343a);
-  box-shadow: 20px 20px 28px #212529, -20px -20px 28px #474f57;
-}
-
-.social-button {
-  border-radius: 9px;
-  background: linear-gradient(145deg, #ffffff, #e6e6e6);
-  box-shadow: 3px 3px 7px #828282, -3px -3px 7px #ffffff;
-}
-
-
-
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide columns by default */
-}
-
-/* Clear floats after rows */
-.row:after {
+.section-title h2::after {
   content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
+  position: absolute;
   display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
 }
 
-/* Style the buttons */
-.btn {
-  border: none;
+.section-title p {
+  margin-bottom: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.form {
+  display: block;
+  height: auto;
+  padding: 32px;
+  background-color: #ebecf0;
+  border-radius: 13px;
+  box-shadow: 3px 3px 5px #babecc, -5px -5px 10px #fff;
+}
+.form__field {
+  display: grid;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.input-group {
+  width: 100%;
+  height: auto;
+}
+.input-group__label {
+  display: block;
+  padding-left: 10px;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  color: #61677c;
+  text-shadow: 1px 1px 0 #fff;
+  margin-bottom: 8px;
+}
+.input-group__input {
+  display: block;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  background-color: transparent;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: #61677c;
+  text-shadow: 1px 1px 0 #fff;
+  padding: 12px;
   outline: none;
-  padding: 12px 16px;
-  background-color: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  transition: all 0.2s ease-in-out;
+}
+.input-group__input:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+.button {
+  background-color: transparent;
+  color: #61677c;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.07em;
+  text-shadow: 1px 1px 0 #fff;
+  padding: 8px 20px;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 3px 3px 5px #babecc, -4px -4px 10px #fff;
+  outline: 0;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
-
-/* Add a grey background color on mouse-over */
-.btn:hover {
-  background-color: #ddd;
+.button:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
 }
-
-/* Add a dark background color to the active button */
-.btn.active {
-  background-color: #666;
-   color: white;
+.button:active {
+  box-shadow: inset 2px 2px 3px #babecc, inset -2px -2px 3px #fff;
 }
