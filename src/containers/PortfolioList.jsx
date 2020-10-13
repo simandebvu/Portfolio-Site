@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import PortfolioItem from '../components/PortfolioItem';
+import '../styles/PortfolioSection.css';
 
 export const PortfolioList = ({ portfolio }) => {
   const [filter, setFilter] = useState('All');
@@ -14,7 +15,7 @@ export const PortfolioList = ({ portfolio }) => {
   const CategoryButton = ({ name, onSelect }) => {
     let mStyle = 'btn';
     if (name === filter) {
-      mStyle += ' active';
+      mStyle += ' text-danger';
     }
     return (<input type="button" className={mStyle} onClick={onSelect} value={name} />);
   };
@@ -27,25 +28,36 @@ export const PortfolioList = ({ portfolio }) => {
   const filtered = filter === 'All' ? portfolio : portfolio.filter(p => p.category === filter);
 
   return (
-    <div className="container-fluid mt-4">
-      <h3>My Portfolio</h3>
-      <div id="myBtnContainer" className="mt-4">
-        {categoriesList.map(
-          p => (
-            <CategoryButton
-              key={p}
-              name={p}
-              onSelect={handleSelectCategory}
-            />
-          ),
-        )}
+    <section id="portfolio" className="portfolio section-bg">
+      <div className="container">
+        <div className="section-title">
+          <h2>Portfolio</h2>
+          <p>Feel free to browse though some of my work below!</p>
+        </div>
+        <div id="myBtnContainer" className="aos-init aos-animate">
+          <div className="row" data-aos="fade-up">
+            <div className="col-lg-12 d-flex justify-content-center">
+              <div id="portfolio-categories">
+                {categoriesList.map(
+                  p => (
+                    <CategoryButton
+                      key={p}
+                      name={p}
+                      onSelect={handleSelectCategory}
+                    />
+                  ),
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          {filtered.map(p => (
+            <PortfolioItem key={p.id} title={p.title} desc={p.description} tools={p.tools} />
+          ))}
+        </div>
       </div>
-      <div className="row">
-        {filtered.map(p => (
-          <PortfolioItem key={p.id} title={p.title} desc={p.description} />
-        ))}
-      </div>
-    </div>
+    </section>
   );
 };
 
