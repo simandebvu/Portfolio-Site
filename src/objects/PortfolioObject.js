@@ -6,7 +6,7 @@ export const mPortfolio = [
     category: 'HTML/CSS',
     github: 'www.github.com',
     image: 'texture.png',
-    languages: ['one', 'two'],
+    tools: ['one', 'two'],
   },
   {
     id: '002',
@@ -15,7 +15,7 @@ export const mPortfolio = [
     category: 'JAVASCRIPT',
     github: 'www.github.com',
     image: 'texture.png',
-    languages: ['one', 'two'],
+    tools: ['JS', 'CSS'],
   },
 ];
 
