@@ -7,7 +7,7 @@ export const ContactSection = () => (
 
       <div className="section-title">
         <h2>Contact</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>Feel more than free to contact me anytime, anywhere!</p>
       </div>
 
       <div className="row" data-aos="fade-in">
@@ -38,7 +38,7 @@ export const ContactSection = () => (
         </div>
 
         <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-          <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+          <form action="https://formspree.io/f/mknpjvvw" method="POST" className="php-email-form">
             <div className="form-row">
               <div className="form-group col-md-6">
                 <label htmlFor="name">Your Name</label>
