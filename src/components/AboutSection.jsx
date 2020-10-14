@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/AboutSection.css';
+// eslint-disable-next-line no-unused-vars
 import Icofont from 'react-icofont';
 import Me from '../images/Me.png';
 
@@ -10,7 +11,10 @@ export const AboutSection = () => (
       <div className="section-title">
         <h2>About</h2>
         <p>
-          Developer skilled in HTML5, CSS3, Databases, Ruby on Rails, Python, Django, Ruby, Javascript, React and Redux, Remote Working, Pair Programming
+          Developer skilled in HTML5,
+          CSS3, Databases, Ruby on Rails,
+          Python, Django, Ruby, Javascript,
+          React and Redux, Remote Working, Pair Programming
         </p>
       </div>
 
@@ -21,7 +25,8 @@ export const AboutSection = () => (
         <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>Full Stack Developer.</h3>
           <p className="font-italic">
-            I'm a creative, analytical and passionate developer
+            I am a creative, analytical
+            and passionate developer
             who lives breathes,
             eats and sleeps in code.
             I am also an avid believer

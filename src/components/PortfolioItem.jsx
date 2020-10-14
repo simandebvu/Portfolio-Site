@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Card from 'react-bootstrap/Card';
-import './PortfolioItem.css';
 
-export const Portfolio = ({ title, desc, tools }) => (
+export const Portfolio = ({ title, desc }) => (
   <div className="column show col-12 col-lg-4 mt-3" key="">
     <div className="content">
 
@@ -37,5 +36,4 @@ export default Portfolio;
 Portfolio.propTypes = {
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
-  tools: PropTypes.instanceOf(Array).isRequired,
 };
