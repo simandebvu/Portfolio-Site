@@ -1,55 +1,28 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React from 'react';
+import { NavHashLink } from 'react-router-hash-link';
 
-export const NavMenu = () => {
-  const handleNavClick = () => {
-    document.body.classList.toggle('mobile-nav-active');
-  };
-  return (
-    <nav className="nav-menu">
-      <ul>
-        <li
-          className="active"
-          onClick={handleNavClick}
-        >
-          <a href="#home">
-            <i className="bx bx-home" />
-            {' '}
-            <span>Home</span>
-          </a>
-        </li>
-        <li
-          onClick={handleNavClick}
-        >
-          <a href="#about">
-            <i className="bx bx-user" />
-            {' '}
-            <span>About</span>
-          </a>
-        </li>
-        <li
-          onClick={handleNavClick}
-        >
-          <a href="#portfolio">
-            <i className="bx bx-book-content" />
-            {' '}
-            Portfolio
-          </a>
-        </li>
-        <li
-          onClick={handleNavClick}
-        >
-          <a href="#contact">
-            <i className="bx bx-envelope" />
-            {' '}
-            Contact
-          </a>
-        </li>
+export const NavMenu = () => (
+  <nav className="nav-menu">
+    <ul>
+      <NavHashLink to="#home" activeClassName="active">
+        <i className="bx bx-home" />
+        Home
+      </NavHashLink>
+      <NavHashLink to="#about" activeClassName="active">
+        <i className="bx bx-user" />
+        About
+      </NavHashLink>
+      <NavHashLink to="#portfolio" activeClassName="active">
+        <i className="bx bx-book-content" />
+        Portfolio
+      </NavHashLink>
+      <NavHashLink to="#contact" activeClassName="active">
+        <i className="bx bx-envelope" />
+        Contact
+      </NavHashLink>
 
-      </ul>
-    </nav>
-  );
-};
+    </ul>
+  </nav>
+);
 
 export default NavMenu;
