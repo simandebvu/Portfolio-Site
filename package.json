@@ -17,7 +17,10 @@
     "react-dom": "^16.13.1",
     "react-icofont": "^1.0.19",
     "react-icons": "^3.11.0",
-    "react-scripts": "3.4.3"
+    "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.2.2",
+    "react-scripts": "3.4.3",
+    "typed.js": "^2.0.11"
   },
   "scripts": {
     "start": "react-scripts start",
