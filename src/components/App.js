@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import AOS from 'aos';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Route from 'react-router-dom/Route';
 import 'aos/dist/aos.css';
 import { SideBar } from '../containers/SideBar';
 import { HeroSection } from './HeroSection';
@@ -18,15 +20,17 @@ function App() {
     },
   );
   return (
-    <>
-      <SideBar />
-      <HeroSection />
-      <main id="main">
-        <AboutSection />
-        <PortfolioList portfolio={mPortfolio} />
-        <ContactSection />
-      </main>
-    </>
+    <Router>
+      <Route path="/" exact>
+        <SideBar />
+        <HeroSection />
+        <main id="main">
+          <AboutSection />
+          <PortfolioList portfolio={mPortfolio} />
+          <ContactSection />
+        </main>
+      </Route>
+    </Router>
   );
 }
 
