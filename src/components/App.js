@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
 import AOS from 'aos';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Route from 'react-router-dom/Route';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'aos/dist/aos.css';
 import { SideBar } from '../containers/SideBar';
 import { HeroSection } from './HeroSection';
