@@ -133,9 +133,9 @@
   color: #149ddd;
 }
 
-.mobile-nav-active {
+/* .mobile-nav-active {
   overflow: hidden;
-}
+} */
 
 .mobile-nav-active #header {
   left: 0;
