@@ -53,7 +53,13 @@ export const PortfolioList = ({ portfolio }) => {
         </div>
         <div className="row">
           {filtered.map(p => (
-            <PortfolioItem key={p.id} title={p.title} desc={p.description} tools={p.tools} />
+            <PortfolioItem
+              key={p.id}
+              title={p.title}
+              desc={p.description}
+              tools={p.tools}
+              image={p.image}
+            />
           ))}
         </div>
       </div>

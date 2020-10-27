@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Card from 'react-bootstrap/Card';
 
-export const Portfolio = ({ title, desc }) => (
+export const Portfolio = ({ title, desc, image }) => (
   <div className="column show col-12 col-lg-4 mt-3" key="">
     <div className="content">
 
@@ -12,7 +12,7 @@ export const Portfolio = ({ title, desc }) => (
             {' '}
             <Card.Img
               variant="top"
-              src="https://via.placeholder.com/150"
+              src={image}
               style={{ maxHeight: '180px' }}
             />
             <Card.Body>
@@ -36,4 +36,5 @@ export default Portfolio;
 Portfolio.propTypes = {
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
