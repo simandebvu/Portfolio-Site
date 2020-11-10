@@ -7,7 +7,7 @@ export const ContactSection = () => (
     <footer className="container">
 
       <div className="section-title">
-        <h2>Contact</h2>
+        <h3>Contact</h3>
         <p>Feel more than free to contact me anytime, anywhere!</p>
       </div>
 
@@ -47,19 +47,19 @@ export const ContactSection = () => (
                 <div className="validate" />
               </div>
               <div className="form-group col-md-6">
-                <label htmlFor="name">Your Email</label>
+                <label htmlFor="email">Your Email</label>
                 <input type="email" className="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
                 <div className="validate" />
               </div>
             </div>
             <div className="form-group">
-              <label htmlFor="name">Subject</label>
+              <label htmlFor="subject">Subject</label>
               <input type="text" className="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
               <div className="validate" />
             </div>
             <div className="form-group">
-              <label htmlFor="name">Message</label>
-              <textarea className="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us" />
+              <label htmlFor="message">Message</label>
+              <textarea className="form-control" name="message" id="message" rows="10" data-rule="required" data-msg="Please write something for us" />
               <div className="validate" />
             </div>
             <div className="mb-3">
@@ -67,7 +67,7 @@ export const ContactSection = () => (
               <div className="error-message" />
               <div className="sent-message">Your message has been sent. Thank you!</div>
             </div>
-            <div className="text-center"><button type="submit">Send Message</button></div>
+            <div className="text-center"><button type="submit" className="font-weight-bolder" style={{ backgroundColor: '#000' }}>Send Message</button></div>
           </form>
         </div>
 

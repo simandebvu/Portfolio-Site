@@ -19,13 +19,13 @@ export const HeroSection = () => {
   return (
     <>
       <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
-        <div className="hero-container" data-aos="fade-in">
+        <div className="hero-container" style={{ backgroundColor: '#000000', padding: 10 }} data-aos="fade-in">
           <h1>Shingirayi Mandebvu</h1>
-          <p>
+          <h2 className="font-weight-bold text-white">
             I love to
             {' '}
             <span id="typedStuff" />
-          </p>
+          </h2>
         </div>
       </section>
     </>

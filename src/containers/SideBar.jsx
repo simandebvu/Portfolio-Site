@@ -10,7 +10,6 @@ export const SideBar = () => {
 
   useEffect(() => {
     if (isMobile) {
-      console.log('mobi');
       document.body.classList.toggle('mobile-nav-active', menuActive);
     }
   }, [menuActive]);

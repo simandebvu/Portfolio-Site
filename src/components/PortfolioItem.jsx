@@ -14,6 +14,7 @@ export const Portfolio = ({ title, desc, image }) => (
               variant="top"
               src={image}
               style={{ maxHeight: '180px' }}
+              alt={`Image : ${title}`}
             />
             <Card.Body>
               <Card.Title>{title}</Card.Title>
