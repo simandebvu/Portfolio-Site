@@ -59,6 +59,8 @@ export const PortfolioList = ({ portfolio }) => {
               desc={p.description}
               tools={p.tools}
               image={p.image}
+              github={p.github}
+              demo={p.demo}
             />
           ))}
         </div>

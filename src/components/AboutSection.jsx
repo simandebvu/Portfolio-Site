@@ -27,7 +27,7 @@ export const AboutSection = () => (
           <p className="font-italic">
             I am a creative, analytical
             and passionate developer
-            who lives breathes,
+            who lives, breathes,
             eats and sleeps in code.
             I am also an avid believer
             in code efficiency and

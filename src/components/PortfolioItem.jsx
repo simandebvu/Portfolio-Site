@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Card from 'react-bootstrap/Card';
 
-export const Portfolio = ({ title, desc, image }) => (
+export const Portfolio = ({
+  title, desc, image, github, demo,
+}) => (
   <div className="column show col-12 col-lg-4 mt-3" key="">
     <div className="content">
 
@@ -24,8 +26,8 @@ export const Portfolio = ({ title, desc, image }) => (
             </Card.Body>
           </Card>
         </div>
-        <button className="button mx-2" type="button">Demo</button>
-        <button className="button" type="button">Code</button>
+        <a className="button mx-2" type="button" href={`${demo}`} target="_blank" rel="noopener noreferrer">Demo</a>
+        <a className="button" type="button" href={`${github}`} target="_blank" rel="noopener noreferrer">Code</a>
       </form>
 
     </div>
@@ -38,4 +40,6 @@ Portfolio.propTypes = {
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired,
+  demo: PropTypes.string.isRequired,
 };

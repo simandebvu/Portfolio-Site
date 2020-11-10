@@ -8,7 +8,7 @@ export const ContactSection = () => (
 
       <div className="section-title">
         <h3>Contact</h3>
-        <p>Feel more than free to contact me anytime, anywhere!</p>
+        <p>Please contact me if you are interested in working together.</p>
       </div>
 
       <div className="row" data-aos="fade-in">
@@ -32,8 +32,6 @@ export const ContactSection = () => (
               <h4>Call:</h4>
               <p>+263 772 770 994</p>
             </div>
-
-            <iframe src="https://maps.google.com/maps?q=greencroft%20zimbabwe&t=&z=15&ie=UTF8&iwloc=&output=embed" frameBorder="0" style={{ border: '0', width: '100%', height: '290px' }} title="my location" allowFullScreen />
           </div>
 
         </div>
