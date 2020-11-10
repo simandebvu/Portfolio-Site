@@ -4,7 +4,7 @@ import '../styles/ContactSection.css';
 
 export const ContactSection = () => (
   <section id="contact" className="contact">
-    <div className="container">
+    <footer className="container">
 
       <div className="section-title">
         <h2>Contact</h2>
@@ -18,7 +18,7 @@ export const ContactSection = () => (
             <div className="address">
               <i className="icofont-google-map" />
               <h4>Location:</h4>
-              <p>4 & 6 Duxford Rd, Greencroft, ZW</p>
+              <p>Greencroft, ZW</p>
             </div>
 
             <div className="email">
@@ -73,7 +73,7 @@ export const ContactSection = () => (
 
       </div>
 
-    </div>
+    </footer>
   </section>
 );
 
