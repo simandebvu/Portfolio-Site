@@ -16,59 +16,61 @@ export const SideBar = () => {
   }, [menuActive]);
 
   return (
-    <header id="header">
-      <div className="d-flex flex-column">
-        <div className="profile">
-          <Profile />
+    <aside>
+      <header id="header">
+        <div className="d-flex flex-column">
+          <div className="profile">
+            <Profile />
+          </div>
+          <nav className="nav-menu">
+            <ul>
+              <NavHashLink
+                to="#home"
+                activeClassName="active"
+                onClick={() => setMenuState(prevMenuActive => !prevMenuActive)}
+              >
+                <i className="bx bx-home" />
+                Home
+              </NavHashLink>
+              <NavHashLink
+                to="#about"
+                activeClassName="active"
+                onClick={() => setMenuState(prevMenuActive => !prevMenuActive)}
+              >
+                <i className="bx bx-user" />
+                About
+              </NavHashLink>
+              <NavHashLink
+                to="#portfolio"
+                activeClassName="active"
+                onClick={() => setMenuState(prevMenuActive => !prevMenuActive)}
+              >
+                <i className="bx bx-book-content" />
+                Portfolio
+              </NavHashLink>
+              <NavHashLink
+                to="#contact"
+                activeClassName="active"
+                onClick={() => setMenuState(prevMenuActive => !prevMenuActive)}
+              >
+                <i className="bx bx-envelope" />
+                Contact
+              </NavHashLink>
+
+            </ul>
+          </nav>
+          <button
+            type="button"
+            aria-label="button"
+            onClick={() => setMenuState(prevMenuActive => !prevMenuActive)}
+            className="mobile-nav-toggle d-xl-none"
+          >
+            <i className={`nav-ham ${menuActive ? 'icofont-close' : 'icofont-navigation-menu'}`} />
+
+          </button>
         </div>
-        <nav className="nav-menu">
-          <ul>
-            <NavHashLink
-              to="#home"
-              activeClassName="active"
-              onClick={() => setMenuState(prevMenuActive => !prevMenuActive)}
-            >
-              <i className="bx bx-home" />
-              Home
-            </NavHashLink>
-            <NavHashLink
-              to="#about"
-              activeClassName="active"
-              onClick={() => setMenuState(prevMenuActive => !prevMenuActive)}
-            >
-              <i className="bx bx-user" />
-              About
-            </NavHashLink>
-            <NavHashLink
-              to="#portfolio"
-              activeClassName="active"
-              onClick={() => setMenuState(prevMenuActive => !prevMenuActive)}
-            >
-              <i className="bx bx-book-content" />
-              Portfolio
-            </NavHashLink>
-            <NavHashLink
-              to="#contact"
-              activeClassName="active"
-              onClick={() => setMenuState(prevMenuActive => !prevMenuActive)}
-            >
-              <i className="bx bx-envelope" />
-              Contact
-            </NavHashLink>
-
-          </ul>
-        </nav>
-        <button
-          type="button"
-          aria-label="button"
-          onClick={() => setMenuState(prevMenuActive => !prevMenuActive)}
-          className="mobile-nav-toggle d-xl-none"
-        >
-          <i className={`nav-ham ${menuActive ? 'icofont-close' : 'icofont-navigation-menu'}`} />
-
-        </button>
-      </div>
-    </header>
+      </header>
+    </aside>
   );
 };
 
