@@ -46,9 +46,9 @@ export const AboutSection = () => (
                 <li>
                   <i className="icofont-rounded-right" />
                   {' '}
-                  <strong>Phone:</strong>
+                  <strong>Alt Email:</strong>
                   {' '}
-                  +263 772 770 994
+                  shingim1@gmail.com
                 </li>
               </ul>
             </div>

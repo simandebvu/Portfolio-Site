@@ -18,19 +18,13 @@ export const ContactSection = () => (
             <div className="address">
               <i className="icofont-google-map" />
               <h4>Location:</h4>
-              <p>Greencroft, ZW</p>
+              <p>Mars</p>
             </div>
 
             <div className="email">
               <i className="icofont-envelope" />
               <h4>Email:</h4>
               <p>simandebvu@icloud.com</p>
-            </div>
-
-            <div className="phone">
-              <i className="icofont-phone" />
-              <h4>Call:</h4>
-              <p>+263 772 770 994</p>
             </div>
           </div>
 
